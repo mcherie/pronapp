@@ -17,29 +17,37 @@ export const Footer = () => {
         fontSize: "0.9rem",
         display: "flex",
       }}>
-        <span >
-            Designed by <strong>Cher</strong> &nbsp;&nbsp;|&nbsp;&nbsp; Powered by <strong>chocolate bars</strong> and <strong>coffee</strong>
-          <img 
-            src={Facebook} 
+      <span >
+        Designed by <strong>Cher</strong> &nbsp;&nbsp;|&nbsp;&nbsp; Powered by <strong>chocolate bars</strong> and <strong>hot chocolate</strong>
+        <a 
+          href="http://facebook.com" 
+          target="_blank" 
+          rel="noopener noreferrer">
+            <img
+              src={Facebook}
+              alt=""
+              style={{
+                height: "1.4rem",
+                paddingLeft: "25rem",
+                color: "#7f7f7f",
+                display: "inline-block",
+              }}
+            ></img></a>
+        <a
+          href="http://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img
+            src={Twitter}
             alt=""
-            style={{ 
-              height: "1.4rem",
-              paddingLeft: "30rem",
-              color: "#7f7f7f",
-              display: "inline-block",
-            }}
-          ></img>
-          <img 
-            src={Twitter} 
-            alt=""
-            style={{ 
+            style={{
               height: "1.1rem",
               paddingLeft: "2rem",
               color: "#7f7f7f",
               display: "inline-block",
             }}
-          ></img>
-        </span>
-      </div>
+          ></img></a>
+      </span>
+    </div>
   )
 }

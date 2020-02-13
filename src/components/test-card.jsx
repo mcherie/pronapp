@@ -6,52 +6,54 @@ export const TestCard = (props) => {
       style={{
         backgroundColor: "white",
         height: "10rem",
-        width: "22rem",
+        width: "24rem",
         display: "inline-block",
-        margin: "1rem",
+        margin: "1.5rem",
         position: "relative",
         zIndex: 100,
         verticalAlign: "top", 
         paddingTop: "0.5rem",
-        paddingBottom: "6rem",
+        paddingBottom: "6.5rem",
         paddingLeft: "2rem",
         paddingRight: "2.5rem",
         textAlign: "left",
-        // fontFamily: "Open Sans",
         fontFamily: "Open Sans,Arial,sans-serif"
-        // boxShadow: "0 30px 10px 0.1px #ededed",
       }}> 
 
       <img 
         src={props.img ? props.img : "◉"} 
         alt="" 
-        class="et-waypoint et_pb_animation_top et-animated"
         style={{
           height: "2rem",
           paddingTop: "1rem",
           verticalAlign: "top", 
         }}></img>
-        <p 
+      <a 
+          href="blank" 
+          target="_blank" 
+          rel="noopener noreferrer"><p 
           style={{
-            color: "#33dba4",
+            color: "#09e1c0",
             fontFamily: "Open Sans",
             fontWeight: "bold",
             fontSize: "1.1rem",
             display: "inline-block",
             paddingLeft: "1rem",
-          }}>{props.title ? props.title : "Title 1"}</p>
-        <p 
+          }}>{props.title ? props.title : "Title 1"}</p></a>
+      <p 
             style={{
               fontFamily: "Noto Sans",
               paddingLeft: "3rem", 
               color: "#8585bd",
-              lineHeight: "1.5em",
+              lineHeight: "1.9em",
+              marginTop: 0,
             }}>{props.desc ? props.desc : "Description"}</p>
-        <p 
+      <p 
           style={{
             paddingLeft: "3rem", 
             fontWeight: "bold",
             color: "#8585bd",
+            paddingTop: "0.8rem",
           }}>START NOW</p>
     </div>
   )
