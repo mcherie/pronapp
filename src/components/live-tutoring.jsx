@@ -6,7 +6,7 @@ export const LiveTutoring = () => {
       style={{
         width: "75%",
         height: "13rem",
-        backgroundColor: "violet",
+        backgroundColor: "#7373DD",
         display: "inline-block",
         marginTop: "5rem",
       }}>
