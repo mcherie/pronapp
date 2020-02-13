@@ -13,28 +13,24 @@ export const TestCard = (props) => {
         zIndex: 100,
         verticalAlign: "top", 
         paddingTop: "0.5rem",
-        paddingBottom: "5rem",
+        paddingBottom: "6rem",
         paddingLeft: "2rem",
         paddingRight: "2.5rem",
         textAlign: "left",
-        fontFamily: "Open Sans",
+        // fontFamily: "Open Sans",
+        fontFamily: "Open Sans,Arial,sans-serif"
         // boxShadow: "0 30px 10px 0.1px #ededed",
       }}> 
 
       <img 
-        src="http://www.get-social.ca/wp-content/uploads/2019/12/coding-icon_7.jpg" 
+        src={props.img ? props.img : "◉"} 
         alt="" 
         class="et-waypoint et_pb_animation_top et-animated"
         style={{
           height: "2rem",
-          // display: "inline-block",
           paddingTop: "1rem",
+          verticalAlign: "top", 
         }}></img>
-      <span 
-        style={{
-          // display: "inline-block",
-          justifyContent: "flex-start"
-        }}>
         <p 
           style={{
             color: "#33dba4",
@@ -42,22 +38,21 @@ export const TestCard = (props) => {
             fontWeight: "bold",
             fontSize: "1.1rem",
             display: "inline-block",
-            // verticalAlign: "center", 
             paddingLeft: "1rem",
           }}>{props.title ? props.title : "Title 1"}</p>
         <p 
             style={{
               fontFamily: "Noto Sans",
               paddingLeft: "3rem", 
-              color: "#999999"
+              color: "#8585bd",
+              lineHeight: "1.5em",
             }}>{props.desc ? props.desc : "Description"}</p>
         <p 
           style={{
             paddingLeft: "3rem", 
-            color: "grey", 
             fontWeight: "bold",
+            color: "#8585bd",
           }}>START NOW</p>
-      </span>
     </div>
   )
 }

@@ -31,6 +31,7 @@ export const Main = () => {
           color:"#cccccc", 
           fontSize: "1rem",          
           fontFamily: "Noto Sans",
+          lineHeight: "1.7em",
         }}>These premium speaking tests will help you to prepare for the speaking portion of the IELTS examination. </p>
     </div>
   )
